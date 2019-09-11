@@ -98,10 +98,6 @@ client.on('message', (topic, message) => {
                     console.log("Set nguong cam bien smvir")
                     client.publish(`${imei}/AWNResp`, `{"id":"${imei}","code":913,"info":{"NumberPhone":0384035197,"value":100}}`)
                     break;
-                case 383:
-                    console.log("Set nguong cam bien smvir")
-                    client.publish(`${imei}/AWNResp`, `{"id":"${imei}","code":913,"info":{"NumberPhone":0384035197,"value":100}}`)
-                    break;
                 case 391:
                     console.log("Yeu Cau Doi Pass")
                     client.publish(`${imei}/AWNResp`, `{"id":"${imei}","code":391,"result":1}`)
