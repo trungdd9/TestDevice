@@ -125,7 +125,7 @@ client.on('message', (topic, message) => {
                     client.publish(`${imei}/CONNECTRESP`, `{"id":"${imei}","code":997,"result":1}`)
                     break;
                 case 998:
-                    client.publish(`${imei}/CONNECTRESP`, `{"id":"${imei}","code":997,"result":1}`)
+                    client.publish(`${imei}/CONNECTRESP`, `{"id":"${imei}","code":998,"result":1}`)
                     break;
             }
             break;
