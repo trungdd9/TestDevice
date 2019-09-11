@@ -65,10 +65,12 @@ client.on('message', (topic, message) => {
     switch (name_topic) {
         case 'Alarm':
             client.publish(`${imei}/AWNResp`, `{ "id": "${imei}", "code":${JSON.parse(message).code},"result":1}`)
+            client.publish(`${imei}/Request`,`{"id":"${imei}", "code": 901}`)
             console.log(message.toString())
             break;
         case 'Warning':
             client.publish(`${imei}/AWNResp`, `{ "id": "${imei}", "code":${JSON.parse(message.toString()).code},"result":1}`)
+            client.publish(`${imei}/Request`,`{"id":"${imei}", "code": 901}`)
             console.log(message.toString())
 
             break;
