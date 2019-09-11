@@ -47,12 +47,12 @@ client.on('connect', () => {
     })
     client.subscribe('123456/DISCONN', function (err) {
         if (err) {
-            console.log("Error sub Topic /CONN")
+            console.log("Error sub Topic /DISCONN")
         }
     })
     client.subscribe('123456/LWT', function (err) {
         if (err) {
-            console.log("Error sub Topic /CONN")
+            console.log("Error sub Topic /LWT")
         }
     })
 
