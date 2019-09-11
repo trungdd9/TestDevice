@@ -92,7 +92,7 @@ client.on('message', (topic, message) => {
                     break;
                 case 382:
                     console.log("Set nguong cam bien detvir")
-                    client.publish(`${imei}/AWNResp`, `{"id":"${imei}","code":911,"info":{"NumberPhone":0384035197,"value":100}}`)
+                    client.publish(`${imei}/AWNResp`, `{"id":"${imei}","code":912,"info":{"NumberPhone":0384035197,"value":100}}`)
                     break;
                 case 383:
                     console.log("Set nguong cam bien smvir")
